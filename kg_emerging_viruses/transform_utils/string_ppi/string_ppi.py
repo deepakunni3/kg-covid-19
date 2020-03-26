@@ -148,7 +148,7 @@ class StringTransform(Transform):
         ]
         self.edge_header = edge_core_header + edge_additional_headers
         relation = 'RO:0002434'
-        seen = []
+        seen: List = []
 
         with open(self.output_node_file, 'w') as node, \
                 open(self.output_edge_file, 'w') as edge, \
